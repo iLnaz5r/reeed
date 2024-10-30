@@ -1,0 +1,184 @@
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: rgba(255, 38, 38, 0.536);
+    background-image: url(./images/bg-intro-desktop.png);
+}
+.box{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(2,600px);
+    gap: 10rem;
+    margin-top: -100px;
+    margin-left: -100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.main-text{
+    display: grid;
+    color: white;
+    margin-top: -300px;
+    margin-left: 150px;
+}
+
+.head{
+    display: grid;
+    margin-top: 590px;
+    font-size: 50px;
+}
+.para{
+    display: grid;
+    margin-top: -100px;
+    font-weight: 100;
+}
+.button1{
+    display: grid;
+    grid-template-columns: repeat(1,200px);
+    gap: 1rem;
+}
+.forms{
+    display: grid;
+    background-color: white;
+    width: 500px;
+    padding: 40px;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 10px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.info_about{
+    display: grid;
+    padding-left: center;
+    height: 160px;
+    gap: 1rem;
+}
+.first{
+    display: grid;
+    place-content: center;
+    width: 578px;
+    margin-left: 2px;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: rgb(93, 93, 186);
+    color: white;
+    font-weight: 100;
+    height: 70px;
+    text-align: center;
+    box-shadow: 1px 7px 0px 1px rgba(0, 0, 0, 0.2);
+}
+.free{
+    font-weight: bold;
+}
+label{
+    display: grid;
+}
+input{
+    display: grid;
+    height: 60px;
+    width: 470px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.send{
+    display: grid;
+    place-content: center;
+    margin-top: 230px;
+    width: 480px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(64, 189, 116);
+    font-size: 18px;
+}
+.mini_para{
+    font-size: 14px;
+   text-align: center;
+   color: rgb(173, 172, 172);
+   font-weight: bold;
+}
+.href{
+    color: rgb(255, 110, 110);
+}
+@media screen and (max-width:450px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./images/bg-intro-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 20vh;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -250px;
+        margin-left: -140px;
+    }
+    .main-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .button1{
+        margin-left: -180px;
+        margin-top: -40px;
+
+    }
+    .forms{
+        padding: 10px;
+        width: 300px;
+        margin-left: 100px;
+    }
+    .first{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        width: 320px;
+        margin-left: 100px;
+        margin-top: -60px;
+    }
+    input{
+        width: 270px;
+    }
+    .send{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 276px;
+        margin-top: 240px;
+    }
+    .head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 40px;
+        padding: 20px;
+    }
+    .para{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: -40px;
+        padding: 50px;
+        font-size: 20px;
+        margin-left: -20px;
+    }
+}
